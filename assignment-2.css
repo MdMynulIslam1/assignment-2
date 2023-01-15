@@ -1,0 +1,159 @@
+/* body{
+    background-color: rgba(255, 144, 14, 0.1);   
+} */
+*{
+    margin: 0;
+}
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+nav .left{
+    width: 302px;
+    height: 53px;
+    top: 30px;
+    left: 228px;
+    margin-top: 25px;
+}
+nav .right ul{
+   list-style: none;
+   display: flex;
+
+}
+nav ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #424242;
+
+}
+.heading{
+   text-align: center;
+   width: 800px;
+   margin: 0 auto;
+}
+
+.explore{
+    margin-top: 15px;
+    border-style: none;
+    background-color: #FF900E;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+.background{
+    width: 1440px;
+    height: 700px;
+    margin: 50px 0;
+}
+.first-blogs{
+display: flex;
+align-items: center;
+gap: 40px;
+}
+.quick{
+    color: #727272;
+}
+.h2-text{
+   color: black;
+   font-weight: bold; 
+   
+}
+.first-blog-feature{
+    color: #fd8700;
+}
+.blog-text{
+display: flex;
+flex-direction: column;
+}
+.explore-2{
+    margin-top: 5px;
+    border-style: none;
+    background-color:#fd8700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.second-blogs{
+    width: 45%;
+}
+.explore-3{
+position: absolute;
+right: 550px;
+border-style: none;
+background-color: #fd8700;
+padding: 8px 16px;
+border-radius: 5px;
+}
+.feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.architect{
+    height: 600px;
+}
+.third-blogs{
+text-align: center;
+margin: 50px 0px ;
+}
+.dashboard{
+    display: flex;
+    margin-top: 30px; 
+    justify-content: center;
+}
+.award{
+    margin-top: 0px;
+    border: 1px solid #fd8700;
+    width: 240px;
+    height: 170px;
+    padding-top: 70px;
+
+}
+.project{
+    border: 1px solid #fd8700; 
+    margin: 0px 10px;
+    width: 240px;
+    height: 170px;
+    padding-top: 70px;
+} 
+.clients{
+    border: 1px solid #fd8700;
+    margin-right: 10px;
+    width: 240px;
+    height: 170px;
+    padding-top: 70px;
+} 
+.email{
+    border: 1px solid #fd8700;
+    width: 240px;
+    height: 170px;
+    padding-top: 70px;
+   
+    
+}  
+.fourth-blogs {
+    text-align: center;
+    
+}
+.fourth-blogs-images{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+footer{
+    background-color: #FFF4E7;
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
