@@ -1,6 +1,6 @@
-/* body{
-    background-color: rgba(255, 144, 14, 0.1);   
-} */
+header{
+    background-color: rgba(255, 144, 14, 0.1); 
+}
 *{
     margin: 0;
 }
@@ -42,14 +42,16 @@ nav ul li a{
     border-radius: 8px;
 }
 .background{
-    width: 1440px;
-    height: 700px;
-    margin: 50px 0;
+    margin: 50px auto;
+    width: 100%;
 }
 .first-blogs{
-display: flex;
-align-items: center;
-gap: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+    margin: 100px auto;
+
 }
 .quick{
     color: #727272;
@@ -62,43 +64,53 @@ gap: 40px;
 .first-blog-feature{
     color: #fd8700;
 }
+.team-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
 .blog-text{
-display: flex;
-flex-direction: column;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 .explore-2{
-    margin-top: 5px;
+    margin-top: 10px;
     border-style: none;
     background-color:#fd8700;
     padding: 5px 10px;
     border-radius: 5px;
     display: block;
 }
-.team-images{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-}
-.second-blogs{
-    width: 45%;
-}
-.explore-3{
-position: absolute;
-right: 550px;
-border-style: none;
-background-color: #fd8700;
-padding: 8px 16px;
-border-radius: 5px;
-}
 .feature{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    column-gap: 30px;
+    margin: 100px auto;
+}
+.second-blogs{
+    width: 470px;
+}
+.second-blog-title{
+    text-align: left;
+    margin-top: 10px;
+   
 }
 .architect{
-    height: 600px;
+    height: 555px;
 }
+.explore-3{
+    position: absolute;
+    right: 572px;
+    border-style: none;
+    background-color: #fd8700;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
 .third-blogs{
 text-align: center;
 margin: 50px 0px ;
@@ -135,25 +147,168 @@ margin: 50px 0px ;
     width: 240px;
     height: 170px;
     padding-top: 70px;
-   
-    
 }  
-.fourth-blogs {
-    text-align: center;
-    
+.fourth-blogs{
+    width: 800px;
+    margin: 0px auto;
+}
+.fourth-blog-heading-title h2,p{
+   text-align: center;
 }
 .fourth-blogs-images{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px;
-    
+    column-gap: 20px;
+    margin-top: 15px;
+
 }
 footer{
     background-color: #FFF4E7;
-    width: 1440px;
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
 }
+.third-blogs .dashboard:hover .award{
+    background-color: #fd8700;
+}
+.third-blogs .dashboard:hover .project{
+    background-color: #7a736b;
+}
+.third-blogs .dashboard:hover .clients{
+    background-color: #5f9dcf;
+}
+.third-blogs .dashboard:hover .email{
+    background-color: #422401;
+}
+@media only screen and (max-width:576px) 
+{ nav{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    text-align: center;
+}
+ .right ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    
+}
+/* navbar media querry ginished */
+.heading{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+}
+ .heading-title{
+    width: 100%;
+ }
+ .title-text{
+    width: 100%;
+ }
+.background{
+    width: 100%;
+}
+/* 2nd stape */
+.team-images{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.first-blogs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.blog-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* 2nd stape finished */
+.second-blogs{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+.second-blog-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.explore-3 {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dashboard{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     row-gap: 10px;
+}
+.award{
+   width: auto;
+   height: auto;
+   padding-top:0;
+}
+
+.project{
+    width: auto;
+    height: auto;
+    padding-top:0;
+}
+.clients{
+    width: auto;
+    height: auto;
+    padding-top:0;
+}
+.email{
+    width: auto;
+    height: auto;
+    padding-top:0;
+}
+.third-blogs h1 ,p{
+
+}
+.fourth-blogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.fourth-blog-heading-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    position: relative;
+    left: 100px;
+}
+.fourth-blogs-images{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    position: relative;
+    left: 120px;
+    row-gap: 20px;
+}
+ }
